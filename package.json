@@ -1,0 +1,30 @@
+{
+  "name": "apollo-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for Apollo.io — people search, contact management, sequences, and organization enrichment via the Model Context Protocol",
+  "type": "module",
+  "bin": {
+    "apollo-mcp-server": "dist/index.js"
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["mcp", "apollo", "apollo.io", "sales", "outreach", "crm", "mcp-server", "prospecting"],
+  "author": "Zach Leventer",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
